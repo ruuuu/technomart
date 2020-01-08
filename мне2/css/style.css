@@ -1,0 +1,3831 @@
+body{
+     
+    margin: 0;
+    padding: 0;
+    
+    min-width: 960px;
+    
+    
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;/*встречается чаще всего в макете, потом его будем переопределять*/
+    
+    
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Cuprum", "Arial", sans-serif; 
+    color: #000000; /*цвет текста*/
+   /* text-transform: uppercase; /*буквы текста большие*/
+    background-color: #ffffff ; /*цвет фона #ffffff*/
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+
+
+
+
+.inner-page{/*общие стили для catalog.html*/
+    font: inherit; /*унаследуем от родителя body*/
+    color: #000000;
+    font-family: "PT Sans", "Open Sans", sans-serif;/*на внутренней станице др шрифт, преопределили*/
+    text-transform: uppercase; /*буквы текста большие*/
+    margin-top: -40px;
+}
+
+
+
+                /*стили для index.html*/
+            /*Г Л О Б А Л Ь Н Ы Е  С Т И Л И*/
+a {
+    text-decoration: none; /*у  всех ссылок в проекте   убираем нижнее подчеркивание, котрое ставит браузер по умолчанию*/
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.button{ /*общий стиль для всех кнопок, потом для конкретных кнопок будем переопределять*/
+    font: inherit; /*унаследуем все свойства шрифтов от родителя*/
+    line-height: 18px; /*переопределили*/
+    color: #ffffff;
+    text-align: center; /*текст распложим по центру*/
+    vertical-align: middle; /*вертикальное выравнивание текста*/
+
+
+    background-color: #ee3643;
+    border: none; /*границ нет*/
+    text-transform: uppercase; /*текст большими буквами**/
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+
+    letter-spacing: normal;
+}
+
+
+.button:hover,
+.button:focus{
+    background-color: #ca2c37;
+}
+
+
+.button:active{
+    background-color: #ba2732;
+}
+
+
+
+
+
+
+.container{ /* обертка-центровщик для main, footer */
+
+    width: 940px; /*940*/
+    margin: 0 auto; /*отцентрирваоли блок*/
+    padding: 0 10px;
+
+}
+
+.main-header{
+
+    /*margin-bottom: 25px; /* отсутп после шапки до хлебных крошек*/
+}
+
+
+
+            /*С Т И Л И   Д Л Я  Ш А П К И*/
+.first_head{
+    color: white;
+    
+    background-color: #293449;/**темносиний фоновый цвет*/
+    
+   
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+}
+
+
+.first_head .container{ /*флекс контейнер*/
+  display: flex;
+  justify-content: space-between;/*выравнивание элементов вдоль главной очи*/
+ 
+  align-items: stretch; /*выравнивание элементов вдоль попеерчной оси*/
+    
+}
+
+
+
+
+.section_one{/*флекс элемент корый сам является флекс контенйером*/
+    width: 490px; /*флекс элементу задаем размер, тогда появится расстяние между элементами*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: stretch;/*выравнивание элементов вдоль попеерчной оси*/
+
+     
+    
+}
+
+
+.main-header-logo{ /*флекс элемент*/
+    width:220px; /*ширина текста*/
+    
+    display: block;
+   
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ee3643;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24); 
+}
+
+
+.main-header-logo:hover
+
+{
+    background-color: #ca2c37; 
+}
+
+
+.main-header-logo:focus{
+    background-color:  #ee3643;
+}
+
+.main-header-logo:active{ /*при нажатии на кнопку*/
+    background-color: #ba2732;
+}
+
+
+
+/*-----------------------------------*/
+.wrap-for-seacrh{
+     
+     position: relative;/*родитель для иконки поиска*/
+     outline: none;
+    
+}
+
+
+ 
+
+.search/*флекс элемент, поле ввода*/
+{
+   
+    display: block;
+    
+   
+    padding-top: 14px ;
+    padding-bottom: 14px;
+    background-color: #293449; 
+    border: 0px solid transparent;
+    outline: none; /*чтобы по умолчанию цвета рамки у  поля не было*/
+    padding-left: 50px;/*место для иконки поиска*/
+    padding-right: 70px;
+    
+    vertical-align: middle;
+    margin-left: 0px;/**/
+   
+    color: white;
+    
+    font-size: 17px;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+    
+    
+}
+
+   
+
+.wrap-for-seacrh a::before { /* псевдоэлемент для иконки поиска*/
+  content: "";
+  padding-left: 30px; /*чтобы текст "Поиск" был правее иконки*/
+  position: absolute;
+    
+  top: 13px;
+  left: 15px;
+  width: 17px;/*размеры иконки*/
+  height: 17px;
+  
+  
+  background-image: url("../img/icon-search-default.svg");
+  
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;/*с прозрачностью*/
+  
+
+    
+}
+
+
+.search:hover /*.search*/
+{
+    background-color: #212a3a;
+}
+
+
+.wrap-for-seacrh a:hover::before{
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1; /*без прозрачности*/
+}
+ 
+.search:focus{
+    background-color: white;
+    color: black;
+    outline: none;
+}
+
+
+.wrap-for-seacrh a:active::before{ 
+    background-image: url("../img/icon-search-red.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity:1; /*без прозрачности*/
+}
+
+
+
+
+
+
+
+
+
+.section_two{/*флекс элементу задаем размер , флекс элемент корый сам является флекс контенйером*/
+    /*width: 480px;/*тогда появится расстяние между элементами*/
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;/*выравнивание элементов вдоль по оси*/
+   
+}
+
+.user-navigation-in-main-header{
+    
+    
+    display: flex;
+    max-width: 150px;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.user-navigation-in-main-header a{
+    display: block;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+
+a.bookmark-icon{ /*флекс элемент*/
+    
+    padding-right: 27px;
+    padding-left: 44px; /*отступ от слова Закладки*/
+        
+}
+
+.bookmark-icon{
+    position: relative;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+
+
+.bookmark-icon::before { /* псевдоэлемент для иконки Закладки*/
+  content: "";
+  position: absolute;
+    
+  top: 15px;
+  left: 17px;
+    
+  width: 14px;/*размеры иконки*/
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+    
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+    
+}
+
+
+
+
+
+.bookmark-icon:hover{
+    background-color: #212a3a;
+}
+
+
+
+
+
+.bookmark-icon:hover::before{/*при наведении меняем иконку на белую*/
+  
+    background-image: url("../img/icon-bookmark.svg");
+    background-position: 0 0;
+    background-repeat:  no-repeat;
+    opacity: 1;
+}
+
+
+
+.bookmark-icon:active{
+    
+    color: rgba(255, 255, 255, 0.6)
+    
+}
+
+.bookmark-icon:active::before{/*при наведении меняем иконку на белую*/
+  
+    background-image: url("../img/icon-bookmark.svg");
+    background-position: 0 0;
+    background-repeat:  no-repeat;
+    
+    opacity: 0.6;
+}
+
+/*--------------------------      */
+
+a.trash{/*флекс элемент*/
+    
+    
+     padding-right: 29px;
+    padding-left: 50px; /**/
+    
+    
+   
+}
+ 
+.trash{
+    position: relative;
+    cursor: pointer;
+    line-height: 18px;
+   
+}
+
+.trash-fill{
+    background-color: #ee3643;
+   
+    
+}
+
+
+.trash::before { /* псевдоэлемент для иконки коризны*/
+  content: "";
+  position: absolute;
+    
+  top: 15px;
+  left: 25px;
+    
+  width: 15px;/*размеры иконки*/
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+    
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;    
+}
+
+
+
+.trash:hover,
+.trash:focus{
+    background-color:#212a3a;
+}
+
+
+.trash:hover::before{
+  background-image: url("../img/icon-cart.svg");
+    
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity:1;  
+}
+
+
+.trash:active{
+    background-color:#161d29;
+    opacity: 0.5;
+}
+
+
+a.make-order-button{/*Кнопка вверху страницы Оформить заказ*/
+    padding-left: 21px;
+    padding-right: 20px;
+    
+    line-height: 18px;
+    text-transform: none; /*переопределили*/
+    background-color: #63a63e;
+    cursor:pointer;
+    outline: none;
+}
+
+
+
+.make-order-button:hover,
+.make-order-button:focus{
+    background-color: #5fbb2d;
+    box-shadow: none;
+   
+}
+
+
+.make-order-button:active{/*при нажатии*/
+    background-color:#63a63e;
+    color: rgba(255, 255, 255, 0.5);
+    
+    
+    
+}
+
+
+
+
+.second_head { /*флекс контейнер  /*блок с голубым фоном*/
+    display: flex;
+    flex-direction: column; /* главная ось направленв сверху  вниз*/
+    justify-content: flex-start;/**/
+    background-color: #f4f7f9;
+     
+    margin-bottom: 60px; /*чтобы блок хлебных крошек  не  прилипали к шапке*/
+
+}
+
+
+
+
+
+
+.content_of_second_head{/*флекс элемент котрый сам является флекс  контейнером*/
+    width: 940px;
+    display: flex;
+    
+    justify-content: space-around;/*расстояние между флекс элементом и границей коненера нет*/
+    align-items: center; /*выравнивание элементов вдоль поперечной оси*/
+    padding-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+
+.content_of_second_head section:nth-child(1){ /*флекс элемент*/
+    width: 196px;
+    padding-left: 20px;
+
+}
+
+
+.content_of_second_head section:nth-child(2){/*флекс элемент*/
+    width:  270px;
+    
+    /*margin-left: 0px;*/
+}
+
+
+
+
+.info_about_shop{
+    width: 196px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style: italic;
+
+}
+
+
+.phone{
+    display: block;
+    width: 195px;
+    position: relative;/*родитель для иконки трубки*/
+    padding-left: 70px; /*место для иконки трубки*/
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    border: 3px solid #ffffff;
+    
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 4px;
+    
+}
+
+
+
+.phone::before { /* псевдоэлемент для иконки трубки*/
+  content: "";
+  position: absolute;
+    
+  top: 10px;
+  left: 10px;
+  width: 19px;/*размеры иконки*/
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+    
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;    
+}
+
+
+
+
+.addresss{
+    margin-left: 5px;
+    
+    color: #32425c;
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+}
+
+
+
+.wrap-for-login-button{/*флекс элемент  сам является флекс контейнером*/
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    /*border: 1px solid grey;*/
+    /*padding-top: 11px ;
+    padding-bottom: 11px;*/
+    margin-top:-25px;
+    margin-left: -20px;
+    
+}
+
+.for-login-icon{ /*  для иконки логина*/
+    
+    position: relative;
+}
+
+
+.for-login-icon::before{ /*псевдоэлемент для иконки логина*/
+    content: "";
+    position: absolute;
+    width: 20px; /*рамзеры иконки*/
+    height: 17px;
+    
+    top: 15px;
+    left: 12px;
+    background-image: url("../img/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*background-color: #ff0000;*/
+    
+}
+
+    
+.button_login{/*кнопка Войти */
+    
+    background-color:#ffffff;
+    padding-top: 12px ;
+    padding-bottom: 12px;
+    padding-left: 48px;
+    padding-right:27px;
+    
+    margin-left: -3px ;
+    
+    color: #000000;
+    text-transform: none; /*переопределили*/
+    font-size: 21px;
+    line-height: 1;
+    /*border: 1px solid grey; /*потом уберем*/
+    /*margin-right: 4px; /*расстояние между кнопками*/
+    
+}
+
+
+.button_registration{/*кнопка Регистрация*/
+    background-color:#ffffff;
+    
+    
+    padding-top: 12px ;
+    padding-bottom: 12px;
+    padding-right: 22px;
+    padding-left: 25px;
+    color: #000000;
+    text-transform: none; /*переопределили*/
+    font-size: 21px;
+    line-height: 1;
+    /*border: 1px solid grey;/*потом уберем*/
+     
+}
+    
+.content_of_second_head section:last-child{
+    margin-right: -40px; /*чтобы выравнить кнопку Регитрация по правому краю*/
+}
+
+
+.button_login:hover,
+.button_login:focus,
+.button_registration:hover,
+.button_registration:focus
+{
+    background-color:#ffffff;
+    color: #ee3643;
+}
+
+
+.button_login:active,
+.button_registration:active
+{
+    color:rgba(0, 0, 0, 0.3);
+}    
+    
+
+.for-login-icon:hover::before{ /*при наведении на иконку менеят цвет*/
+   background-image: url("../img/icon-login-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.for-login-icon:active::before{ /*при нажатии на иконку менеят цвет*/
+   background-image: url("../img/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+
+                    /* С Т И Л И  Д Л Я  Б Л О К   Н А В И Г А Ц И Я*/
+.main-navigation-wrapper{
+    width: 100%;
+    min-height: 65px; /*чтобы блок растягивалмся по высоте, если текста будет много, чтобы содержимое не выпадало из блока*/
+    background-color:  #f4f7f9;
+    
+}
+
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none; /*маркеры у спиcка меню убираем, так как их ставит сам браузер по умолчанию, задаем самому спсику ul*/
+  margin: 0;
+  padding: 0;
+}
+
+
+.site-navigation {  /*флекс элемент, котрый сам является флекс контенером*/
+    display: flex;
+    flex-wrap: wrap; /*перенос элементов*/
+    width: 940px;
+    background-color: #32425c;/* фоновое изображение */
+    
+    justify-content: space-between;
+    align-items: center; /*выравнивание элементов вдоль попереченой оси*/
+    margin-bottom: 60px;
+    
+    color: #ffffff;
+ 
+     
+     box-shadow:   inset 0px -5px 0 0 #293449;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+.site-navigation .first-element{
+    padding-left: 58px;
+   
+}
+
+
+.site-navigation .last-element{
+    padding-right: 58px;
+}
+
+
+
+.site-navigation a{
+    display: block;/*делаем ссылки блочными*/
+    padding: 25px 29px;
+    vertical-align: middle;
+    color: #ffffff;
+    
+
+}
+
+
+ 
+
+.site-navigation a:hover,/*при наведении */
+.site-navigation a:focus
+{
+    box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #293449;
+}
+
+
+.site-navigation a:active{ /*при нажатии на пункты главного  меню*/
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739; 
+   opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+.cards{ /*флекс контейнер*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0;/*сбрысываем стили по умолчанию*/
+    padding: 0;/*сбрысываем стили по умолчанию*/
+    list-style: none;/*убираему спсика маркеры, это свойство задаем спсику!!!*/
+}
+
+
+.visually-hidden-1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+
+.three-cards{
+    margin-bottom: 40px;
+}
+
+
+
+.wrapper-cards{ /*флекс контейнер*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0;/*сбрысываем стили по умолчанию*/
+    padding: 0;/*сбрысываем стили по умолчанию*/
+    list-style: none;/*убираему спсика маркеры, это свойство задаем спсику!!!*/
+    
+}
+
+
+.slider{
+    position: relative; /*родитель для блока круглешков(перелючателей) сддвигаем относительно этого элемента*/
+}
+
+
+.slider-controls{ /*контейнер для переключателей(круглешков)*/
+    position: absolute;
+    
+    left: 320px;
+    bottom: 60px; 
+    
+    z-index: 100;
+    
+    width: 60px;/*размеры контейнера*/
+    height: 18px;
+    
+    text-align: center;
+    
+    transform: translateX(-50%);
+    
+}
+
+
+
+
+.slider-controls label { /*круглешок*/
+    
+  position: relative;/*сдвигать  круглешок будем отноительно этого элемента*/
+    
+  display: inline-block;
+  vertical-align: center;
+    
+  width: 10px;/*разvер самого круглешка*/
+  height: 10px;
+    
+  padding: 6px;/**/
+    
+  /*background-color: white;/*временно потом уберем*/
+  
+  border-radius: 50%;
+  cursor: pointer;
+  /*border:1px solid black;*/ /*потом уберем*/
+
+}
+
+
+.slider-controls label::after {
+    content: "";
+    position: absolute;
+    
+    top: 4px; 
+    left: 10px; 
+    
+    width: 10px; /*размер самого круглешка*/
+    height: 10px;
+    
+    z-index: 1;
+    
+    background: white;/*white*/
+    border-radius: 50%;
+}  
+
+
+.slider-controls .active::before { /*для активного переключателя*/
+  content: "";
+  position: absolute;
+    
+  left: 14px;
+  bottom: 20px;
+    
+    
+  width: 6px;
+  height: 6px;
+  margin: -4px;
+    
+    
+  border: 2px solid white;
+  background:  #ee3643;
+  border-radius: 50%;
+  z-index: 2;
+        
+}
+
+
+.slider-list {
+     /*display: none; крываем пока*/
+    width: 620px;
+    
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+}
+
+
+
+.slider-item {
+  display: none;/*не показываем*/
+    
+}
+
+
+
+
+
+
+
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) { /*если нажали на 1ый радиобаттон то отобразится первое*/
+  display: block;
+}
+
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {/*если нажали на 2-й радиоюаттон то отобразится втрое*/
+  display: block;
+}
+
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before{/*стили для активного переключателя*/
+  content: "";
+  
+  position: absolute;
+    
+  left: 14px;
+  bottom: 12px;
+    
+    
+  width: 6px;
+  height: 6px;
+  margin: -4px;
+    
+    
+  border: 2px solid white;
+  background:  #ee3643;
+  border-radius: 50%;
+  z-index: 2;
+    
+}
+
+
+
+.slider-item h3{
+    margin:0;
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+    text-transform: uppercase;
+     color: white;
+}
+
+
+.slider-item:first-child h3::before{
+    content:"Перфораторы";
+    position: absolute;
+    top: 27px;
+    left: 24px;
+}
+
+.slider-item:last-child h3::before{
+    content:"Дрели";
+    position: absolute;
+    top: 27px;
+    left: 24px;
+}
+
+
+
+
+
+.slider-item h4{
+    margin:0;
+    
+    font-family: "Cuprum", "Arial" ,sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+    color: white;
+}
+
+
+
+.slider-item:first-child h4::before{
+    
+    content:"Настоящие мужские игрушки";
+    position: absolute;
+    top: 67px;
+    left: 24px;
+   
+}
+
+
+.slider-item:last-child h4::before{
+    
+    content:"Соседям на радость!";
+    position: absolute;
+    top: 67px;
+    left: 24px;
+   
+}
+
+
+
+.slider-item::before{ /*псевдоэлемент для стрелки влево*/
+    content:"";
+    position: absolute;
+    
+    top: 110px;
+    left: 24px;
+    
+    width: 22px;/*размеры иконки*/
+    height: 40px;
+    
+    background-image: url("../img/icon-left.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.slider-item::after{/*псевдоэлемент для стрелки вправо*/
+    content:"";
+    position: absolute;
+    
+    top: 110px;
+    right: 24px;
+    
+    width: 22px;/*размеры иконки*/
+    height: 40px;
+    
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.slider-item-button{ /*кнпока Открыть каталог*/
+    display:block;
+    width: 195px; /*ширина самой кнопкие*/
+    
+    content: "";
+    position: absolute;
+    
+    left: 24px;
+    bottom: 45px;
+    
+    padding: 10px 0;/*тогда  верхний и нижний паддинг равен 0*/
+    border-radius: 2px;
+   /*margin-bottom:20px;*/
+    
+}
+
+
+
+.slider-item .slider-item-button::before{ /* псевдоэлемент для кнопки Открыть каталог */
+    content:"";
+    position: absolute;
+    
+    
+    top: 110px;
+    right: 24px;
+    width: 22px;/*размеры иконки*/
+    height: 40px;
+    
+}
+
+
+
+.block-item{/*карточка, флекс-элемент*/
+    position:relative;/*родительль для флажка NEW*/
+    width: 300px;
+    
+    height: 103px;
+    margin-bottom: 20px; /*чтобы карточки  не слипались*/
+    margin-right: 20px;/*чтобы карточки  не слипались*/
+    
+    color: white;
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+
+}
+
+.block-item .flag{
+    position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;/*размеры флага*/
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  
+
+}
+
+.block-item  .flag-on-card{
+     background: url("../img/photoeditorsdk-export.png") no-repeat 0 0;
+}
+
+
+.block-item h3{
+    margin: 0; /*сбрасываем стили*/
+    margin-bottom: 23px;
+   
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+
+.for-label-button{ /*кнопки и иокнки сдвигаем отнительно этого элемента*/
+    position: relative;
+    padding-left: 25px;
+    padding-top: 20px;
+   
+
+    
+}
+
+
+
+.icon{
+    position: absolute;
+    top: 18px;
+    right: 40px;
+}
+
+
+.last-two-cards{
+    margin-right: 0;
+    width: 275px;
+
+}
+
+
+div .last-two-cards:nth-child(1){
+    background-color:  #8ed78f;
+}
+
+
+div .last-two-cards:nth-child(2){
+    background-color: #ffc047;
+}
+
+
+
+
+.block-item:nth-child(1){
+    background-color: #ffbf47;
+}
+
+
+.block-item:nth-child(2){
+    background-color: #3bbce3;
+}
+
+.block-item:nth-child(3){
+    background-color: #dc91d8;
+    margin-right: 0;
+}
+
+
+
+
+.block-item .button-on-cards{/*кнопка на карточках(Материалы Инструмент Техника  Скидка50% Доставка)*/
+    
+    
+    width: 135px;
+    position: absolute;
+    
+    top: 65px ;
+    left: 0px ;
+    
+    padding: 10px 0;
+    
+    
+    text-align: center;
+    margin-left:25px;  
+    
+    
+    background-color: rgba(0, 0, 0, 0.1);/*прозрачность применяем только ккнопке, тгда текст будет белым*/
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    
+    
+    font-family: "Cuprum", "Arial" ,sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+    
+}
+
+
+
+
+
+.block-item a:hover
+{
+   opacity: 0.2;
+  background-color: #000000;
+}
+    
+
+.block-item a:active{
+    opacity: 0.3;
+  background-color: #000000;
+}
+
+
+.catalog-item-on-main-page:nth-child(4){
+    margin-right: 0; /*у последней картчоки убираем отсптуп справа*/
+}
+
+    
+.popular-tovar{ /*флекс контейнер*/
+   display: flex;
+    
+    justify-content:space-between; /*flex-start*/
+   align-items:center;
+    
+    
+    
+   width: 886px; /*падиднги горизонтальные считала, поэтому вметсо 940 рх меньше указываю*/
+   
+   /*min-height: 49px;/*чтобы большой текст вмещался.а не выпадал из блока*/
+   padding: 20px;     
+   padding-left:30px; 
+    padding-right: 24px;
+    
+   
+   background-color: #f9f5f0;
+   
+   margin-bottom: 20px;
+    display: -webkit-box;/*для IE*/
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    
+}
+
+
+h2.page-title{ /*флекс элемент*/
+    
+    margin:0;
+    width: 684px;
+    
+    
+
+    font-size: 30px; /*перепределили*/
+    line-height: 30px;/*перепределили*/
+    color: #32425c;
+    text-transform: uppercase; /*буквы текста большие*/
+    font-family: "Cuprum", "Arial", sans-serif; /*перепределили*/
+    font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+    
+}
+
+
+
+
+
+
+.popular-tovar-button{/*флекс элемент*/
+    
+    align-self: baseline; /*выравниется по текстовой линии*/
+    
+    width: 253px; /*ширина всей кнопки*/
+    min-height: 12px; /*чтобы огромный текст из кнопки не выпадал*/
+   
+    text-align: center;
+    /*margin-left: auto; /*кнопка прижмется  к правому краю контейнера*/
+     
+    
+    padding-top: 13px;
+    padding-bottom: 13px;
+    
+    line-height: 1;
+    border-radius: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.catalog-perfomances{
+
+    width: 1020px; /*  */
+    margin-bottom: 65px;
+}
+
+
+.catalog-list-perfonamces{/* флекс контейнер*/
+    display: flex;
+    justify-content: flex-start;/*равномерное распредление элементов вдоль гланвой оси*/
+
+    flex-wrap: wrap; /*перенос есть*/
+    padding: 0; /*убираем стили по умолчанию*/
+    margin: 0;/*убиарем стили по умолчанию*/
+    list-style: none;/*убираем маркеры у пунктов(карточек товара) меню котрый ставит сам браузер*/
+        
+
+}
+
+
+.catalog-item-perfomances{ /* флекс -элемент(картчока производителя)*/
+   display: flex; /*чтобы отцентрирват элемент в конетйнере*/
+    
+    align-items: center; /* изображенеи в ней центрирутеся вдоль попреченой оси*/
+    justify-content: center; /* изображенеи в ней центрирутеся вдоль главной оси*/
+    width: 218px;
+    height: 125px;
+
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+   
+
+    background-color: #ffffff;  /*фоновый цвет */
+    border: solid 1px #e5e5e5;
+    
+    display: -webkit-box;/*для IE*/
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    
+  
+   
+   
+    
+
+}
+
+.catalog-item-perfomances a{ /*флекс элемент*/
+  
+   /*margin: auto; /*чтобы изображение отцентрироавлоась*/
+   
+    
+}
+
+
+
+
+
+
+.catalog-item-perfomances:hover{
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+
+.catalog-item-perfomances:active{
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
+}
+
+
+.catalog-item-perfomances:nth-child(4n){
+    margin-right:0;
+}
+
+.catalog-item:hover{
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+                /*блок Сервисы  и Доставка*/
+.delivery-services-section{
+    min-height: 522px; /*при переполнении тектсом, чтобы текст не вылезал за границы блока, блок будет тянутся под содержимое*/
+    
+    
+    background-color:  #f4f7f9;
+    font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+    
+}
+
+
+.about-cervices{
+    margin-bottom: 30px;
+}
+
+
+.services{
+     padding-top: 65px;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+
+.text-about-services{
+    width: 398px;
+    margin-bottom:70px;
+}
+
+
+
+
+.wrap_for-delivery-one{/*флекс контейнер*/
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative; /*рисунок грузовика будем сдвигать относитеьно этого*/
+    padding-bottom: 190px;
+    
+    
+   
+}
+
+.title-services{
+    padding-top:0;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #32425c;
+}
+
+
+.wrap_for-delivery-two{
+   
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative; /*рисунок грузовика будем сдвигать относительно этого*/
+    padding-bottom: 190px;
+}
+
+
+.wrap_for-delivery-three{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative; /*рисунок грузовика будем сдвигать относительно этого*/
+    padding-bottom: 120px;
+}
+
+
+.text-credit{
+    margin-bottom: 40px;/*для розовой кнопки Отправить заявку*/
+    
+}
+
+.button-send-email{ /*кнопка Отправить заявку */
+   
+    display: block;
+    width: 195px;
+    padding: 10px 0;
+    max-height: 38px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+    
+}
+
+
+
+.menu{ /*флекс элемент*/
+    position: relative; /*для тени родитель*/
+    list-style: none;
+    width: 240px;
+    padding: 0;
+    margin: 0;
+     margin-right: 80px;
+   
+
+}
+
+.menu::after{/*псевдоэлемент для тени*/
+    position: absolute;
+    content: "";
+    
+    top: -30px;
+    left: 230px;
+    
+    width: 10px;
+    height:279px;
+    /*background: url("../img/shadow.jpg") 0 0 no-repeat;*/
+    
+  /*-webkit-box-shadow: inset 200px 10px 50px -90px rgba(64,80,105,0.25);
+-moz-box-shadow: inset 200px 10px 50px -90px rgba(64,80,105,0.25);*/
+
+    
+    
+}
+
+
+
+.menu li {
+  margin-bottom: 0;
+}
+
+
+.menu li:nth-child(1){
+     background-color: white;
+}
+
+
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color:  white;
+    
+    margin-top: -1px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+    background-color: #32425c;
+}
+
+
+.menu .active-link{
+    box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+    background-color: #ffffff;
+    color: #32425c;
+}
+
+
+.menu a:hover{
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    background-color: #293449;
+}
+
+
+.menu a:active{
+    box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+    background-color: #ffffff;
+    color: #32425c;
+}
+
+
+.shadow{
+    margin:0;
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+
+.about-delivery{ /*флекс элемент*/
+    width: 275px;
+    margin-bottom: 30px;
+    position: relative; /*чтоб текст под картинкой не оказался*/
+    
+}
+
+.about-guarantee{
+     width: 376px;
+    margin-bottom: 30px;
+    position: relative; /*чтоб текст под картинкой не оказался*/
+}
+
+.about-credit{
+     width: 279px;
+     position: relative; /*чтоб текст под картинкой не оказался*/
+    
+}
+
+
+
+.for-delivery-image-one{
+    content: "";
+    position: absolute;
+    
+    top:8px;
+    right: 0px;
+    
+    
+    width: 468px ;
+    height: 251px ;
+    
+
+}
+
+
+.for-delivery-image-two{
+    content: "";
+    position: absolute;
+    
+    top:0px;
+    right: -20px;
+    
+    width: 389px ;
+    height: 283px ;
+    
+}
+
+
+.for-delivery-image-three{
+    content: "";
+    position: absolute;
+    
+    top: -5px;
+    right: -40px;
+    
+    width: 465px ;
+    height: 285px ;
+   
+}
+
+
+/*блок Компания Техномарт и Контакты*/
+
+.index-columns { /*флекс контейнер*/
+    display: flex;
+    justify-content: space-between;/*расстояние между флекс элементом и границей коненера нет*/
+    
+    background-color: #ffffff;/*фоновый цвет*/
+    color: #000000;
+   /* border: 1px solid grey;*/
+    
+}
+
+.title-technomart{
+    padding-top:0;
+}
+
+
+.company{ /*флекс элемент, котрый сам является флекс конейнером*/
+    width: 519px; /*ширина*/
+    display: flex;
+    flex-direction: column;/*глава очь идет сверху вниз*/
+    justify-content: flex-start;
+}
+
+
+.contacts{/*флекс элемент котрый сам является флекс конейнером*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;/*глава очь идет сверху вниз*/
+    justify-content: flex-start;
+}
+
+
+.index-columns h2
+{
+    
+    margin-bottom: 30px;
+    margin-top: 80px;
+    
+}
+
+.index-columns p{
+    margin: 0;
+}
+
+p.text{
+    
+     line-height: 24px;
+     margin: 0;
+     margin-bottom: 30px;
+    
+     font-family: "PT Sans",  "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+      
+}
+
+.company .text-about-shopping{
+    width: 519px;
+}
+
+.text-about-remote-points{
+    width: 386px;
+    
+}
+
+.text-about-self-delivery{
+    width: 179px;
+    
+}
+
+
+.items-companies{
+    margin:0;
+    
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:black;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+}
+
+
+.items-companies  span{
+    display: block;
+    margin-bottom: 25px;
+    
+}
+
+.items-companies  span:last-child{
+     margin-bottom:0;
+     margin-bottom: 40px;
+}
+
+
+.defis{
+    width: 150px;
+    height: 2px;
+    color:  #ee3643;
+    margin-right: 10px;
+    
+}
+
+.more-details-button{
+    width: 140px;
+    padding: 12px 38px;
+    border-radius: 3px;
+    margin-bottom: 80px;
+}
+
+.contacts p{
+    margin-bottom: 40px;
+}
+
+.contacts .map{
+    margin-bottom: 45px;
+}
+
+.write-us-button{ 
+    display: block;
+    
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 80px;
+    
+}
+
+
+
+
+
+            /*С Т И Л И  Д Л Я  П О Д В А Л А*/
+.main-footer {
+
+  margin-top: 65px;/*отступ верхний у подвала*/
+
+
+}
+
+
+.for_footer_part_one{/*первая часть подвала*/
+    background-color: #32425c;
+    color: #f1f5f7;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.for_footer_part_one .container{ /*флекс контейнер*/
+    display: flex;
+    flex-direction: column; /*главная ось  идет сверху вниз*/
+    justify-content: flex-start;/*расположение элементов вдоль главной оси*/
+
+}
+
+
+.wrap-for-footer_first_menu  {/*флекс элемент котрый сам является  контенйером*/
+    display: flex;
+    justify-content: space-between;/*расстояние между флекс элементом и границей коненера */
+    margin-bottom: 30px; /*чтобы отлепить*/
+}
+
+
+.logo-for-footer{
+    padding-top:20px;
+    padding-bottom: 25px;
+}
+
+.for_footer_part_one  .footer_first_menu{/*флекс элемент котрый сам является  контенйером*/
+    width: 720px; /* 940-220=720 флексэлементу задаем размер*/
+    min-height: 13px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/*расстояние между флекс элементом и границей коненера*/
+    margin:0;
+    margin-top: 35px;
+    padding-left: 170px;
+    
+     list-style: none;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+
+
+
+.footer_first_menu a{
+    color: #f1f5f7;
+
+}
+
+
+.footer_first_menu a:hover,
+.footer_first_menu a:focus{
+    text-decoration: underline;
+}
+
+
+
+
+.for_footer_part_one  section{/*флекс элемент, котрый сам является флекс контейнером*/
+    display: flex;
+    justify-content:space-between;/*расстояние между флекс элементом и границей контейнера нет*/
+    align-items: center; /*выравнивание элементов вдоль поперечной*/
+    margin-bottom: 40px;
+
+}
+
+.about-address-footer{ /*флекс-элемент*/
+    width: 470px;
+    margin:0;
+    min-height: 40px;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+    
+    
+    
+}
+
+
+
+.footer_first_menu a:active{
+    text-decoration: none;
+    color: rgba(241, 245, 247, 0.5);
+}
+
+
+
+.footer_second_menu{/*флекс-элемент*/
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; /*убираем маркеры корты сатвит браузер по умолчанию*/
+    margin:0;
+    padding-left: 60px;
+    margin-top:-30px;
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.footer_second_menu:last-child{
+    padding-right: 0;
+}
+
+.footer_second_menu a{
+    color: #ffd180;
+}
+
+
+.footer_second_menu a:hover,
+.footer_second_menu a:focus{
+    text-decoration: underline;
+}
+
+
+.footer_second_menu a:active{
+    text-decoration: none;
+    color: rgba(255, 209, 128, 0.5);
+}
+
+
+.for_footer_part_two{/*вторая часть подвала*/
+    background-color:#293449;
+    color: #ffffff;
+
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+    
+}
+
+
+
+.for_footer_part_two .container{ /*флекс контйнеер*/
+    display: flex;
+    align-items: center; /*выравниевание элементов вдоль поперечнойной оси*/
+    padding-top: 20px;
+    padding-bottom: 20px; ;
+        
+}
+
+
+
+
+
+.for_footer_part_two .container p:nth-child(1){
+    margin-right: 140px;
+}
+
+
+.for_footer_part_two .container p:nth-child(3){
+    margin-left: auto;
+}
+
+.for_footer_part_two .container p:nth-child(4){
+    margin-left: 50px; /**/
+}
+
+
+
+
+.list_socials{
+    display: flex;
+    width: 141px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.social-button{ /*кнопк соц сети*/
+    display: flex; /*Чтобы выравнять иконки в кнопках делам каждую кнопку флес конте-ом*/
+
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+
+    background-color: #212a3a;
+    border-radius: 20px;
+}
+
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active
+{
+  background-color: #ee3643;
+}
+
+
+
+.feedback{
+    color: #ffd180;/*переопределили*/
+}
+
+
+.for_link{
+    color: #ffd180;/*переопределили*/
+}
+
+.feedback:hover,
+.for_link:hover{
+    text-decoration: underline;
+}
+
+
+.feedback:active,
+.for_link:active{
+    color:#ee3643;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/***********************************************************************/
+
+                    /*С Т И Л И  Д Л Я catalog.html*/
+
+
+
+
+
+.wrap-for-logout-button{/**/
+    /*border: 1px solid grey;*/
+    width: 310px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    margin-left: -15px;
+    background-color: white;
+    
+}
+
+
+.for-user-icon{
+    
+    position:relative;
+    
+}
+
+
+.for-user-icon::before{ /*псевдоэдемент для иконки юзера*/
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 18px;
+   top: -4px;    
+   left: 13px;    
+   background-image: url("../img/icon-user.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   /*background-color: #ff0000;*/
+}
+
+
+.for-user-icon:hover::before{
+    background-image: url("../img/icon-user-blue.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.for-user-icon:active::before{ /*ghb yf;fnbb*/
+    background-image: url("../img/icon-user-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.for-logout-icon{
+    position:relative;
+}
+
+
+.for-logout-icon::after{ /*псевдоэлемент для иконки выхода*/
+  content: "";
+  
+  position: absolute;
+  top: -3px;
+  left: 40px;
+  
+  width: 21px;
+  height: 17px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*background-color: #ff0000;*/
+}
+
+
+
+.for-logout-icon:hover::after{
+    background-image: url("../img/icon-logout-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.for-logout-icon:active::after{ /*ghb yf;fnbb*/
+    background-image: url("../img/icon-logout-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+
+.name{ /*в шапке*/
+    font-size: 21px;/*переопредлили*/
+    line-height: 21px;
+    color: #000000;
+    font-family: "Cuprum", "Arial" ,sans-serif;
+    
+   
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+    
+    padding-left: 45px; /*место для иконки человека*/
+    
+    
+}
+
+
+
+.name:active{
+   color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.small_link{ /*Мои заказы и Личный кабинет в header*/
+    text-decoration: underline;
+    color: #32425c;
+    font-size: 16px; /*переопределили*/
+
+}
+
+
+.small_link:hover,
+.small_link:focus{
+    color: #ee3643;
+}
+
+
+.small_link:active{
+    color:  rgba(50, 66, 92, 0.3);
+}
+
+
+
+
+.wrap-for-small-link{
+    width: 280px;
+    margin-left: 20px;
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+}
+
+.small_link_second{ /*для иконки маленькая синяя точка*/
+    position: relative;
+    padding-left: 30px;/*отсуп от ссылки  Личный кабинет*/
+}
+
+
+
+.small_link_second::before{ /*псевдоэлемент для иконки маленькая синяя точка*/
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    
+    top:5px;;
+    left:10px;
+    
+    background-color: #32425c;
+    border-radius: 5px;
+}
+
+
+
+
+.breadcrumbs{ /*хлебные крошки*/
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px; /*отступ после крошек*/
+    list-style: none; /*убираем маркеры у ссылок, котрый ставит браузер по умолчанию*/
+    margin-top: -40px;
+   
+}
+
+.indent-for-crumbs{
+    /*margin-top: 60px;*/
+}
+
+.breadcrumbs li{
+  position: relative; /*родитель для иконки >*/
+
+  margin-right: 20px;
+  
+  margin-left: 23px;
+}
+
+
+.breadcrumbs li:last-child { /*у  последнего элемента убираем правый оступ*/
+  margin-right: 0;
+}
+
+
+.breadcrumbs li::after { /*псевдоэлемент */
+  content: "";
+
+  position: absolute;
+
+  width: 8px; /*размеры самой иконки >*/
+  height: 12px;
+  top: 5px; /* подобрала*/
+  right: -25px;/*на шару подобрала*/
+  background: url("../img/icon-right-small.svg") no-repeat;
+}
+
+
+.breadcrumbs-current::after { /*последий галочку в хлебных крошках не отображаем*/
+   display: none;
+}
+
+
+
+.before-catalog a::before{/*псевдоэлемент домик*/
+  content: "";
+
+  position: absolute;
+  width: 14px; /*размеры самой иконки >*/
+  height: 12px;
+  top: 4px; /*на шару подобрала*/
+  right: 10px;/*на шару подобрала*/
+  background: url("../img/icon-home.svg") no-repeat;
+
+}
+
+
+
+
+.breadcrumbs a{
+     
+    font-family: "PT Sans", "Open Sans", sans-serif;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.38;
+   letter-spacing: normal;
+    color: #000000;
+}
+
+
+.breadcrumbs-current{
+    text-decoration: none;
+}
+
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    /*при наведении на ссылку и если она в фокусе(наведение курсора)*/
+    text-decoration: underline; /*она подчеркивается*/
+
+}
+
+
+
+.change-fon{ /* блок ПЕРФОРАТОРЫ*/
+     background-color: #f4f7f9;
+}
+
+
+
+
+
+
+.block-for-filter-sortirovka{ /*флекс контенер*/
+    
+    display: flex;
+
+    justify-content: space-between;/*равномерное распредление элементов вдоль гланвой оси*/
+
+    padding:  0; /*убираем стили по умолчанию*/
+    
+    margin: 0;/*убиарем стили по умолчанию*/
+    list-style: none;/*убираем маркеры у пунктов(карточек товара) меню котрый ставит сам браузер*/
+    
+    
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.38;
+   letter-spacing: normal;
+
+    margin-bottom: 20px;
+
+}
+
+
+.filtes-small-block{/*флекс элемент*/
+    width: 200px; /*такак  padding-left: 20px*/
+    background-color: #f7f3ec;
+    padding: 11px 0;
+    padding-left: 20px;
+    
+  
+}
+
+.wrap-for-filter-big-block{
+    width: 700px; 
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color: #f7f3ec;
+    
+}
+
+.sort-item{/*флекс элемент*/
+    margin-left: 15px;
+    padding-right: 35px;
+}
+
+
+.sortirovka-block{/*флекс элемент, котрый сам вялется флекс контейнером*/
+    
+    display: flex;
+    justify-content: flex-start;/*неравномерное
+    распредление элементов вдоль гланвой оси*/
+    align-items: center;
+    flex-wrap: wrap; /*перенос есть*/
+    padding-right: 0; /*убираем стили по умолчанию*/
+    padding-left:0;
+    margin: 0;/*убиарем стили по умолчанию*/
+    list-style: none;/*убираем маркеры у пунктов(карточек товара) меню котрый ставит сам браузер*/
+    position: relative; /*относительно этого блока позиционируем стрелочки вверх/вниз*/
+    
+}
+
+
+.sortirovka-block li{ /**/
+    /*display:block;*/
+    
+    
+    margin-left: 70px;
+    border-bottom: 1px dotted  #ee3643;
+    color: rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+
+.sortirovka-block li:nth-child(3){
+    /*padding-right: 25px;*/
+}
+
+
+.sortirovka-block li:nth-child(4){
+    padding-left:0;
+    padding-right: 0;
+    margin-left: 20px;
+    border-bottom: none;
+}
+
+
+.sortirovka-block li:nth-child(5){
+    padding:0;
+   
+    border-bottom: none;
+    
+}
+
+
+
+.sortirovka-block li:nth-child(4)::before{/*для стрелки вверх*/
+    content: "";
+    position: absolute;
+    
+    top: 3px;
+    right: 30px;
+    
+    width: 11px;
+    height: 11px ;
+    background-image: url("../img/icon-up-dir.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+.sortirovka-block li:nth-child(5)::before{/*для стрелки вниз*/
+    content: "";
+    position: absolute;
+    
+    top: 3px ;
+    right: 0px ;
+    
+    width: 11px ;
+    height: 11px ;
+    background-image: url("../img/icon-down-dir.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+.sortirovka-block li:not(:nth-child(4)):hover,
+.sortirovka-block li:not(:nth-child(5)):hover
+{ /*к 4-му  и 5-му не применятется(стрелки ввверх вниз)*/
+   
+    color: black;
+    border-bottom: 1px solid #ee3643;
+}
+
+
+
+
+
+
+.sortirovka-block li:nth-child(4):hover::before{ /*при наведении на стрелку вверх*/
+    background-image: url("../img/icon-up-dir-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+.sortirovka-block li:nth-child(5):hover::before{
+    background-image: url("../img/icon-down-dir-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+
+
+
+
+
+
+.sortirovka-block li:nth-child(4):active::before{ /*при нажатии на стрелку вверх*/
+    background-image: url("../img/icon-up-dir-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+.sortirovka-block li:nth-child(5):active::before{/*при нажатии*/
+    background-image: url("../img/icon-down-dir-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+
+
+
+.sortirovka-block li:nth-child(1):active,
+.sortirovka-block li:nth-child(2):active,
+.sortirovka-block li:nth-child(3):active
+
+{
+    color:#ee3643;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+.catalog-columns {/*флекс контейнр(объединяет  боковые фильтры и каталаг)*/
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 60px; /*отлепляем секцию О перфораторах от Конетйнера с пагинацией*/
+}
+
+
+
+
+.filters{
+    width: 220px;
+    margin-right: 20px; /*отлепляем карты от бокового фильтра*/
+    
+}
+
+
+
+
+.filter fieldset{ /*форма группы полей*/
+    
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    border: none; /*убираем  обводку у fieldset()*/
+}
+
+
+.filter fieldset:nth-child(3){
+    margin-top: -15px;
+}
+
+
+                            /*стили для ползунка*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+}
+
+
+
+.range-filter {
+  width: 220px; /*ширина фильтра*/
+  margin-top: 0px;
+}
+
+
+.filter-item legend {
+ 
+  
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+}
+
+
+.range-controls {
+    
+  position: relative;/*родителья для круглешков*/
+  height: 41px;/*Так как внутренние отступы учитываются в размер объекта, уменьшим высоту объекта на размер верхнего внутреннего отступа.*/
+  
+  background-color: #f7f3ec;
+    
+  margin-bottom: 10px;/*чтобы отодвинуть нижний блок.*/
+  border-radius: 5px; 
+    
+  padding-top: 39px; /* (80px — 2px) / 2 = 39px*/
+    
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.range-controls .scale { /*стили для шкалы*/
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+
+.range-controls .bar {
+  width: 90%; /*ширина ползунка зеленого*/
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle { /*круглешки*/
+  position: absolute;
+  
+  top: 31px;
+  left: 0;
+    
+    
+  width: 4px;/*размеры*/
+  height: 4px;
+    
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+
+.range-controls .toggle-min { /*для левого кружка*/
+  left: 18px;
+}
+
+.range-controls .toggle-max {/*для правого кружка*/
+  left: 165px;
+}
+
+
+
+
+.price-controls{
+   display: flex;
+    justify-content: space-between;
+    align-items: center; /*флекс жлементы располодаться по центру*/
+    margin-bottom: 25px;
+}
+
+
+.price-controls input {
+   
+    
+    width: 66px;
+    padding: 10px 10px;
+    
+    text-align: center; /*текст внутри поля  по центру*/
+    
+    
+    border: none; 
+    border-radius: 5px;
+    background-color: #f7f3ec;
+    
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.grey-border{ /*сера горизонталья черта после  филтра ЦЕНА*/
+    border-bottom:  1px solid #e5e5e5;
+}
+
+
+.filter legend{
+    margin-left: 0;
+    padding-left:0;
+    margin-bottom: 14px;
+    font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;/*перепределили*/
+
+}
+
+
+.filter ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;/*убираем маркеры у списка кторый ставит браузер по умолчанию*/
+
+}
+
+
+
+.filter-option{
+    margin-bottom: 14px;
+    padding-left: 45px; /* освобождаем место для иконки чекбоксов*/
+}
+
+
+.filter-option label {
+  position: relative; /*это родитель для  иконки чекбокса, потом будем сдвигать чекбокс относительно границ родителя*/
+  display: block;
+  cursor: pointer;
+  user-select: none; /*отменяем выделение текста подписи цветом*/
+  margin-bottom: 15px; /*расстояние между чекбоксами*/
+  padding-top:2px;
+}
+
+
+
+
+
+.filter-option:nth-child(5) { /*серая горзонтальная черта после пунтка чекбокса HITACHI*/
+    padding-bottom: 10px;
+    border-bottom:  1px solid #e5e5e5;
+}
+
+
+
+
+.filter-input:hover + label,
+.filter-input:focus + label { /*label котрый СРАЗУ идет после .filter-input*/
+    color:#b5b5b5;
+
+}
+
+
+
+
+
+
+.filter-input:disabled + label{ /*для задизейбленного поля*/
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.filter label{
+
+    font-size: 15px ;/*переопределили*/
+    line-height: 20px;/*переопределили*/
+    font-family: "PT Sans", "Open Sans", sans-serif;
+   
+    
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  
+    letter-spacing: normal;
+    
+}
+
+
+
+
+.filter-input-checkbox + label::before { /* псевдоэлемент нечекнтутый чекбокс*/
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+ 
+}
+
+
+.filter-input-checkbox + label:hover::before{ /*нечекнутый чекбокс наведение*/
+     background: url("../img/checkbox-off-hover.svg") no-repeat 0 0;
+    /*border-color: #b5b5b5;*/
+}
+
+
+
+
+
+
+
+.filter-input-checkbox:checked + label::after { /* псевдоэлемент чекнутый чекбокс*/
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 0px;
+  width: 27px;
+  height: 23px;
+   
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+
+
+.filter-input-checkbox:checked + label:hover::after {/*чекнутый чекбокс наведение*/
+     background: url("../img/checkbox-on-hover.svg") no-repeat 0 0;
+}
+
+
+
+
+
+.filter-input-radio + label::before {/* псевдоэлемент радиобаттон нечекнутый*/
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 0px;
+  width: 25px;/*размеры иконки*/
+  height: 25px;
+
+  background: url("../img/radio-off.svg") no-repeat 0 0;
+}
+
+
+.filter-input-radio:checked + label::after {/* псевдоэлемент радиобаттон чекнутый*/
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 0px;
+  width: 25px;/*размеры иконки*/
+  height: 25px;
+  
+  color: black;  
+  background: url("../img/radio-on.svg") no-repeat 0 0;
+}
+
+
+
+.filter-input-radio + label:hover::before{ /*наведение на выключенный радио*/
+     background: url("../img/radio-off-hover.svg") no-repeat 0 0;
+}
+
+
+.filter-input-radio:checked + label:hover:after{/*наведение на включенный  радио*/
+     background: url("../img/radio-on-hover.svg") no-repeat 0 0;
+}
+
+
+
+
+
+
+.button_show{ /*кнпока Показать  в фильтрах*/
+  display: block;
+    
+    
+  padding:10px  38px;
+  
+  background-color: white;
+  color: black;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+
+  margin-top: 70px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Open Sans", sans-serif;
+    outline: none; /*чтобы при нажатии не было темно-синий рамки котрая устанволена по умолчанию*/
+  
+}
+
+.button_show:hover,
+.button_show:active{
+    background-color: white;
+}
+
+
+
+                    /*СТИЛИ К КАРТОЧКАМ ТОВАРОВ*/
+
+
+.catalog-list{
+    width: 700px; /**/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+
+.catalog-on-main-page{ /*в index.html */
+    width: 940px;
+}
+
+
+.catalog-item { /*флекс элеент*/
+    
+   position: relative; /*родитель для иконки NEW*/
+ 
+   width: 220px; 
+   
+    
+  
+   margin-bottom: 20px;
+  
+   line-height: 20px;
+    font-weight: bold;
+   text-align: center;
+   border: 1px solid #ccc;
+   
+}
+
+
+
+
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;/*размеры флага*/
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  
+}
+
+
+.catalog-item .flag-new { /* белый фон обрезала*/
+  background: url("../img/photoeditorsdk-export.png") no-repeat 0 0;
+   /*border: 0px solid transparent;  flag-transparent.png */
+    
+    
+}
+
+
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%; /*такая же как и у родителя*/
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255);
+ 
+ 
+}
+
+
+.catalog-item .buy,
+.catalog-item .bookmark{
+    
+  display: block;
+  width: 129px;
+  margin: 0 auto;/*центруруем кнопки в контенере*/
+  margin-bottom: 7px;/*отлепим первую кнопку от второй*/
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal; 
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+   
+}
+
+.catalog-item .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+
+
+.catalog-item .actions {
+  display: none; /*по умолчниаю кнопки  Купиь и В закладки не отображаем*/
+}
+
+
+
+.catalog-item:hover .actions {
+  display: block; /*деалет так чтобы кнопки отображались только при наведении*/
+    
+} 
+
+.catalog-item .actions {
+  display: none; /*по умолчниаю кнопки  Купиь и В закладки не отображаем*/
+}
+
+
+
+.catalog-item .image {
+  width: 218px;
+  height: 170px;
+    
+}
+
+
+.catalog-item .image img {
+  max-width: 100%;
+  height: auto; /*значение по умолчанию*/
+}
+
+
+.catalog-item .title {
+    font-size: 18px;
+    font-family: "PT Sans",  "Open Sans", sans-serif;
+    line-height: 20px;  
+    text-transform: none;
+    min-height: 40px;/*чтобы если добавим  текст то он не выпадал из блока*/
+    
+  padding: 0 25px;
+    
+  margin-top: 10px;
+  margin-bottom: 15px;    
+}
+
+
+
+
+.catalog-item .discount {
+  
+  font-family: "PT Sans",  "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+    
+  min-height: 20px;/*чтобы если добавим  текст то он не выпадал из блока*/
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+  color: #999;
+  text-decoration: line-through;
+}
+
+
+
+.catalog-item .price{/* розовая кнопка с ценой на карточке товара*/
+
+    position: relative;
+    
+    width: 131px;/*80px*/
+    min-height: 18px; /*без учета  вертикальных паддингов*/
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 0; /* padding: 10px 30px*/
+  
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+    
+    
+    
+    font: inherit;
+    font-family: "PT Sans",  "Open Sans", sans-serif;
+    font-size: 17px;
+    
+    line-height: 1;
+    
+
+}
+
+
+
+.catalog-item .price:after { /*псевдоэлемент(треугольник) для  розовой кнопки*/
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  
+  width: 0;
+  height: 0;
+  
+  border: 19px solid white;
+  border-left-color: #ee3643;
+    
+    
+    
+    
+}
+
+
+
+
+.catalog-item .buy{ /*  зеленая кнопка Купить*/
+    position: relative;
+    
+   
+    color: #ffffff; /*переопределили*/
+    background-color: #63a63e; 
+    
+}
+
+
+.catalog-item .buy::before{ /*псевдоэлемент для корзины на  кнопке Купить*/
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    top  2px;
+    left: 14px ;
+    /*background-color: red;*/
+    background: url("../img/icon-cart.svg") no-repeat 0 0;
+    opacity: 0.3;
+   
+}
+
+
+
+.catalog-item .buy:hover,
+.catalog-item .buy:focus{
+    background-color: #5fbb2d; 
+    
+    border-top: 3px solid transparent; /*прозрачный*/
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  
+    
+}
+
+.catalog-item .buy:hover::before{
+   
+     opacity: 1; 
+   
+}
+
+
+.catalog-item .buy:active{
+    background-color: #518534; 
+    border: 3px solid transparent;
+}
+
+
+
+
+
+.catalog-item .bookmark{ /*Кнопка В закладки*/
+    
+    background-color: #ffffff;
+
+    color: #32425c;/*переопределили*/
+
+
+}
+
+
+
+
+
+.catalog-item .bookmark:hover,
+.catalog-item .bookmark:focus{
+    border: solid 3px #32425c;
+    color: #32425c;
+}
+
+
+.catalog-item .bookmark:active{
+    color: rgba(50, 66, 92, 0.3);
+    border: solid 3px rgba(50, 66, 92, 0.3);
+}
+
+
+.filters h2.visually-hidden{
+    display: none; /*не отобраажем*/
+}
+
+
+.catalog  h2.visually-hidden{
+     display: none; /*не отобраажем*/
+}
+
+
+
+
+.pagination-list { /*Пагинация, флекс контейнер*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; /*сбрасываем стили по умолчанию*/
+  margin: 0;
+  margin-top: 30px;    
+    
+    
+  list-style: none;
+  
+  font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+
+}
+
+
+.pagination-item {
+   margin-right: 5px; /*чтоб пункты пагинации не прилипали друг к другу*/
+}
+
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+
+.pagination-item a{
+    display: block;
+    padding: 8px 13px;
+    background-color:  #ffffff;
+    
+    border: solid 1px #e5e5e5;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Open Sans",  sans-serif;
+}
+
+
+.next{
+    padding: 8px 30px; /*КАК СДЕЛАТЬ БЕЗ КЛАССА??*/
+}
+
+
+.pagination-item-current a{
+    background-color: #ee3643;
+
+    color: white;
+}
+    
+
+
+
+.pagination-item a:hover, /*при наведении*/
+.pagination-item a:focus
+{
+    border: solid 1px #bdc6ca;
+
+}
+
+
+.pagination-item a:active{ /*при нажатии*/
+    border: solid 1px #ee3643;
+}
+
+
+
+
+.about-perforators{
+    width: 100%; /*ШИРИНА такая же как и у родителя*/
+    min-height: 261; /*чтобы при добавлении тектса текст не выпадал из блока*/
+    background-color: #f4f7f9;
+}
+
+
+
+
+.about-perforators h1{
+    
+    margin: 0;
+    padding-top: 67px;
+    padding-bottom: 30px;
+    
+    font-family: "Cuprum",  "Arial" ,sans-serif; /*перепределили*/
+    font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+}
+
+
+
+.text-about-perforators{
+    
+    padding-bottom: 73px;
+    
+    
+  font-family: "PT Sans",  "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.visually-hidden:not(:focus):not(:active), /*для скрытия элементов со страницы.*/
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+            /*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА */
+
+@keyframes bounce {/*анимацию для открытия модального окна. Сначала описываем анимацию.*/
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake { /*анимацию для тряски формы в случае ошибки.*/
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+
+.modal {
+   color: #000000;
+
+  background-color: #ffffff;
+  position: fixed;
+  
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ee3643;
+  display: none; /*не отображаем окно по умолчанию*/
+}
+
+
+.modal-show {
+  display: block;
+    
+  animation: bounce 0.6s;/*Добавляем анимацию к классу открытия модального окна.*/
+}
+
+
+.modal-error {/*этот класс, который будет добавлять эту анимацию к модальному окну если бдут оишбки.*/
+  animation: shake 0.6s;
+}
+
+
+
+
+.modal-login {/*окно ввода данных*/
+
+    width: 460px; /*ширина содержимого окна*/
+    
+    padding-left: 80px ;
+    padding-right: 80px;
+    
+    padding-top: 50px;
+    padding-bottom: 37px;
+    
+    top: 120px;/*  120px расположение  модальнго окна, отступ от верхней границы браузера до верхней граниыцы модального окна*/
+    left:  50%;/* 50% отсутп от левой границы браузера до левой границы модального окна*/
+    margin-left: -230px; /*сдвигаем окно влево*/
+    
+    
+}
+
+
+.modal-close { /*кнпока закрытия Крестик*/
+  position: absolute;
+    
+  top: 10px; /*сдвигаем крестик*/
+  right: 15px;
+    
+  width: 22px;
+  height: 22px;
+
+  
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+.modal-close::before,
+.modal-close::after { /* псевдоэлемент две розовые полосы для крестика*/
+  content: "";
+
+  position: absolute;
+  top: 9px ;
+  left: -2px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ee3643;
+}
+
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+.for-name-and-emal-fields{ /*флекс контейнер для двух полей*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.for-name-and-emal-fields label{
+    display: block; /*чтобы поле перенеслось на следующую строку */
+    
+}
+
+
+.modal-login p label{
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+
+
+.login-form p{
+    
+    margin:0;
+    
+}
+
+
+.wrap-for-label-with-field label{
+    margin-bottom: 10px;/*отлепляем надпись от поля*/
+}
+
+
+.login-form input[type="text"]
+ {
+    
+    box-sizing: border-box;/*чтобы отступы не влияли на размеры поля ввода.*/
+    width: 220px;/*ширина поля*/
+    padding: 11px;
+    padding-left: 14px;
+     outline: none;/*убираем стиль у поля при наведении фокуса, чтобы не окрашивалось в темносиний цвет*/
+    
+    font-family: "PT Sans",  "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+   
+   color: #a9a9a9;
+   text-transform: inherit;
+    border:  2px solid #dee3e4;
+     
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+
+
+.login-form input:hover
+{
+    border-color: #b5b5b5; 
+    
+}
+
+
+.login-form input:focus, 
+.login-form textarea:focus
+{
+    border-color: #ee3643;
+    background-color: white; 
+    box-shadow: none;
+    
+}
+
+
+p .for-textarea-label{
+    display: block;
+    margin-bottom: 10px;/*после того как сделаем блочным, этот отступ будет*/
+}
+
+
+.login-form textarea{ /*строчный элемент*/
+    
+    display: block;/*делаем блочным*/
+    width: 94%; /* если 100% указать то почему края выходят за пределы формы??*/
+    height: 110px;
+    
+    padding: 11px;
+    padding-left: 14px;
+    
+    margin-bottom: 30px;
+    outline: none; /*стиль по умолчанию убираем, то есть чтобы  граница при фокусе не крашивалась в темно-синий*/
+    
+    resize: none;/*чтобы пользователь не мог размер ему менять*/
+    
+    border-radius: 2px;
+    border: 2px solid  #dee3e4;
+    font-family: "PT Sans",  "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+    color: #a9a9a9;
+   
+}
+
+
+.login-form .wrap-for-button{
+    display: block;
+    width:  620px; 
+   
+    text-align: center;/*чтобы кнпока выровнилась по центру серого блока!!!*/
+    
+    
+    margin-left: -80px;
+    background-color:  #f4f4f4;
+    margin-bottom: -40px; /*убираем  лишнее пространство*/
+}
+
+
+.login-form button{ /*кнпока Отправить*/
+    width: 460px; /*шиина всей кнопки*/
+    padding: 14px 0;
+    margin: 37px auto;
+    
+    border: none;
+    outline: none; /*чтоы не было при нажатии темно-синей рамки*/
+    
+    color: white;
+    background-color: #ee3643;
+    font-family: "Cuprum",  "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+            /*  МОДАЛЬНОЕ ОКНО "ДОБАВИТЬ В КОРЗИНУ"*/
+
+.modal-trash{
+   color: #000000;
+
+   background-color: #ffffff;
+   position: fixed;
+   
+   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+   border-top: 7px solid #ee3643; /*верхняя рамка у окна*/
+    display: none; /*не отображаем окно*/
+}
+
+
+.modal-login-add-trash {
+
+    width: 460px; /*ширина содержимого*/
+    padding-left: 80px ;
+    padding-right: 90px;
+    
+    padding-top: 50px;
+    padding-bottom: 37px;
+    
+    top: 300px;/*расположение  модальнго окна, отступ от верхней границы браузера до верхней граниыцы модального окна*/
+    left: 50%;/*отсутп от левой границы браузера до левой границы модального окна*/
+    margin-left: -230px; /*сдвигаем окно влево*/
+    
+    
+}
+
+
+.modal-trash h3{
+    
+    margin:0;
+    margin-top:20px;
+    padding-left: 100px; /*оставляем место для иконки Галочка*/
+    margin-bottom: 55px;
+    
+    
+    font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+    
+}
+
+
+.modal-trash h3:before{ /*псевдоэлемент для иконки Галочка*/
+  content: "";
+
+  position: absolute;
+  top: 50px ;
+  left: 80px;
+
+  width: 66px;/*размеры изображения*/
+  height: 66px;
+
+    
+  background-image: url("../img/modal-check.svg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  /*background-color: black;*/
+}
+
+
+.modal-trash  .fon-wrapper{
+    width: 630px;
+    background-color: #f1f1f1;
+    margin-left: -80px;
+    height: 112px;
+    
+    margin-bottom: -40px; /*убираем  лишнее пространстов  внизу*/
+}
+
+
+.for-buttons-in-trash{ /*флекс контейнер*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:35px;  /*опускам кнопки*/
+}
+
+
+.for-buttons-in-trash a{
+    display: block;
+    width: 220px;
+   
+    border: 1px solid transparent;
+    text-align: center; /*надпись на кнопке по центру*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+  font-family: "Cuprum", "Arial",  sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+   text-transform: uppercase;
+    
+    border-radius: 3px;
+}
+
+
+.for-buttons-in-trash a:first-child{
+    background-color: #ee3643;
+    margin-left: 80px;
+    color: white;
+}
+
+
+
+.for-buttons-in-trash a:last-child{
+    background-color: #ffffff;
+    margin-right: 80px;
+    color: black;
+}
+
+                        /*НАВИГАЦИОННАЯ КАРТА*/
+
+.modal-map{/*для карты навигационной*/
+    
+    top: 50%;
+    left: 50%;
+    
+   
+    width: 940px;
+    height: 446px;
+    
+    margin-top: -280px;/*пододвигаем окно*/
+    margin-left: -499px;/*пододвигаем окно*/
+    border: none; /*убираем рамку*/
+    
+}
+
+
+.modal-map p {
+  
+  top: 0;
+  left: 0;
+  z-index: 1;
+    
+  margin: 0;
+}
+
+
+
+
+.modal-close-for-map { /*кнпока закрытия Крестик*/
+  position: absolute;
+    
+  top: 10px; /*сдвигаем крестик*/
+  right: 15px;
+    
+  width: 22px;
+  height: 22px;
+
+  
+  font-size: 0;
+  background-color: transparent;
+  border:none;/*убираем рамку*/
+  cursor: pointer;
+}
+
+
+
+.modal-close-for-map::before,
+.modal-close-for-map::after { /* псевдоэлемент две розовые полосы для крестика*/
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ee3643;
+}
+
+
+.modal-close-for-map::before {
+  transform: rotate(45deg); /*поворачиваем ан 45 гралусов*/
+}
+
+
+.modal-close-for-map::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+

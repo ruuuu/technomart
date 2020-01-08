@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Проект Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet"><!--для кроссбраузерности -->
+    <link href="css/style.css" rel="stylesheet"><!-- наш файл-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <header>
+
+      <div class="first_head"><!-- первая часть шапки-->
+        <div class="container"><!-- центровшик и флекс контейнер-->
+          <section class="section_one"><!-- входит Лого и поиск, флекс элемент корый сам является флекс контенйером-->
+              <a class="main-header-logo" href="index.html"><!---флекс элемент -->
+                  <img src="img/invalid-name.svg" width="109" height="19" alt="Логотип Техномарт">
+              </a>
+              <div class="wrap-for-seacrh">
+                <input name="s"  type="text" class="search" value="Поиск">
+                <a></a>
+              </div>
+          </section>
+            
+          <section class="section_two"><!-- входят Закладки  Корзина, Офрмить заказ,  флекс сэлемент, сам является флекс контейнером-->
+              <ul class="user-navigation-in-main-header">
+                  <li> 
+                      <a class="bookmark-icon" href="">Закладки: 0</a>
+                 </li>
+              </ul> 
+              <ul class="user-navigation-in-main-header">
+                   <li>
+                       <a class="trash" href="">Корзина: 0</a>
+                  </li>
+              </ul>
+              <ul class="user-navigation-in-main-header">
+                  <li>
+                    <a class="make-order-button" href=""><!--флекс элемент--> 
+                      Оформить заказ </a>
+                 </li>
+              </ul>
+              
+          </section>
+        </div><!--центровщик -->
+      </div><!-- первая часть шапки-->
+
+     
+      <div class="second_head"><!--вторая часть шапки /*блок с голубым фоном*/-->
+        <div class="container"><!-- центровшик и флекс контейнер--> 
+           <div class="content_of_second_head"> <!-- флекс элемент, котрый сам является флекс контейнром-->
+             <section> <!-- флекс элемент-->
+                <p class="info_about_shop">
+                  Интернет-магазин 
+                  строительных материалов
+                  и инструментов для ремонта
+                </p>       
+             </section>
+                
+             <section><!-- флекс элемент-->
+                <a href="tel:+78125550555" class="phone"> 
+                   +7 (812) 555-05-55
+                </a>
+                <div class="addresss">
+                  г. Санкт-Петербург, ул. Б. Конешенная, д. 19/8
+                </div>
+             </section>
+
+             <section class="wrap-for-login-button"><!-- флекс элемент кнопки Войти и Регитрация --> 
+                  
+                <a class="button button_login for-login-icon" href="login.html">Войти</a>
+                
+                <a class="button button_registration" href="">Регистрация</a>
+            </section>
+           </div>  
+          </div><!--container -->
+          <!-- главное меню, флекс элемент, котрый сам является флекс контенером-->
+          
+          <div class="main-navigation-wrapper">
+             <div class="container">
+               <ul class="site-navigation"><!-- меню-->
+                  <li><a class="first-element" href="index.html">Главная</a></li>
+                  <li><a href="">Компания</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Спецпредложения</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a class="last-element" href="">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+      </div><!--вторая часть шапки--> 
+
+    </header>
+
+    <main><!--основное содержимое-->
+    
+      <section class="container"><!-- три блока: Материалы Инстурменты Техника-->
+         <ul class="cards"><!--флекс контейнер-->
+             <li class="block-item for-label-button"><!-- карточка , флекс элемент -->
+                    <div class="flag flag-on-card"></div><!-- для иконки флажка-->
+                    <h3>Материалы</h3>
+                    <a class="button-on-cards"  href=""><!-- ссылка в виде кнопки-->
+                         НА ЛЮБОЙ ВКУС
+                    </a>
+                   <p class="icon">
+                     <img src="img/icon-1.svg" width="44" height="65" alt="bucket">
+                   </p>
+             </li>
+             <li class="block-item for-label-button"><!-- карточка  , флекс элемент-->
+                 <h3>Инструмент</h3>
+                 <a class="button-on-cards"  href="">
+                     НА ВСЕ СЛУЧАИ
+                 </a>
+                 <p class="icon">
+                     <img src="img/icon-2.svg" width="75" height="61" alt="instrument">
+                 </p>
+             </li>
+             <li class="block-item for-label-button"><!-- карточка  , флекс элемент-->
+                 <div class="flag flag-on-card"></div><!-- для иконки флажка-->
+                 <h3>Техника</h3>
+                 <a  class="button-on-cards" href="">
+                     ДЛЯ СТРОЙКИ
+                 </a>
+                 <p class="icon">
+                     <img src="img/icon-3.svg" width="78" height="62" alt="instrument">
+                 </p>
+             </li>
+         </ul>
+      </section>
+        
+      <section class="container three-cards"><!-- три блока: Дрели Скидка Доставка-->    
+        
+        <div class="wrapper-cards"> <!-- флекс-контейнер-->
+            <div class="slider"> 
+              <input class="visually-hidden-1" type="radio" id="product-1" name="toggle" checked>
+              <input class="visually-hidden-1" type="radio" id="product-2" name="toggle">
+              <div class="slider-controls"><!--флекс элемент(контейнер для переключатеелй) -->
+                  <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
+                  <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
+              </div>
+              <ul class="slider-list"><!-- флекс элемент родитель для кнопки, стерлок и круглешков-->
+                 <li class="slider-item"> 
+                    <h3></h3>
+                    <h4></h4>
+                    <img src="img/slider-image1.jpg" width="620" height="266" alt="слайдер">
+                    <a class="button slider-item-button" href="catalog.html">Открыть каталог</a><!-- ссылка в виде кнопки-->
+                 </li>  
+                 <li class="slider-item"> 
+                    <h3></h3>
+                    <h4></h4>
+                    <img src="img/slider-image2.jpg" width="620" height="266" alt="слайдер">
+                    <a class="button slider-item-button" href="catalog.html">Открыть каталог</a><!-- ссылка в виде кнопки-->
+                </li> 
+              </ul>
+            </div><!--.slider -->
+            <div><!-- флекс элемент-->
+                <div class="block-item for-label-button last-two-cards">
+                    <h3>Cкидка 50%</h3>
+                    <a class="button-on-cards" href="">на 350 товаров</a>
+                    <p class="icon">
+                      <img src="img/icon-4.svg" width="59" height="72" alt="instrument">
+                    </p>
+                </div>
+                <div class="block-item for-label-button last-two-cards">
+                    <h3>Доставка</h3>
+                    <a class="button-on-cards" href="">бесплатно</a>
+                    <p class="icon">
+                      <img src="img/icon-5.svg" width="78" height="63" alt="instrument">
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+      </section>
+    
+    
+      <div class="container"> <!--центровщик-->
+        <section class="popular-tovar"><!-- флекс контейнер-->
+            <h2 class="page-title">Популярные товары  Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары Популярные товары</h2>
+            <a class="button popular-tovar-button" href="catalog.html">Все популярные товары</a><!-- ссылка ввиде кнопки-->
+        </section>
+      </div>
+    
+      <div class="container">
+        <section class="catalog-list catalog-on-main-page"><!-- width= 940 px, список карточек с товарами-->
+             <h2 class="visually-hidden">Список инструментов</h2>
+             <div class="catalog-item"><!-- карточка товара-->
+                    <div class="flag flag-new">новинка</div>
+                    <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                    </div>
+                    <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                    </div>
+                    <div class="title">Перфоратор BOSCH BFG 3000 </div>
+                    <div class="discount">22 5098 Р.</div>
+                    <div class="price">15875487 Р.</div>
+                
+            </div>
+                   
+            <div class="catalog-item"><!-- карточка товара-->
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount"></div>
+                        <div class="price">90 500 Р.</div>
+            </div>
+                   
+            <div class="catalog-item">
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount"></div>
+                        <div class="price">15 500 Р.</div>
+            </div>
+                   
+            <div class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+            </div>
+                   
+		  </section><!-- список карточек с товарами-->
+      </div><!-- от ценровщика-->    
+    
+      <div class="container"> <!--центровщик-->
+        <section class="popular-tovar"><!-- флекс контейнер-->
+            <h2 class="page-title">Популярные производители  Популярные производители Популярные производители Популярные производители Популярные производители Популярные производители Популярные производители </h2>
+            <a class="button popular-tovar-button" href="catalog.html">Все производители </a><!-- ссылка в виде кнопки-->
+        </section>
+      </div>
+    
+      <div class="container"> <!--блок-центровщик -->   
+        <section class="catalog-perfomances"><!-- карточки ПРОИЗВОДИТЕЛЕЙ-->
+           <h2 class="visually-hidden">Список производителей</h2>
+           <ul class="catalog-list-perfonamces"><!--список производителей -->
+                <li class="catalog-item-perfomances"><!-- флекс элемент(карточка)-->
+                    <a href="">
+                        <img src="img/bosch.jpg" width="126" height="37" alt="фото bosch">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                <a href="">
+                    <img src="img/makita.jpg" width="123" height="40" alt="фото makita">
+                </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                       <img src="img/de-walt.jpg" width="146" height="44" alt="фото Dewalt">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                        <img src="img/invalid-name.jpg" width="200" height="88" alt="фото Интерскол">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                        <img src="img/hitachi.jpg" width="169" height="31" alt="фото hitachi">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                        <img src="img/lg.jpg" width="121" height="73" alt="фото LG">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                        <img src="img/aeg.jpg" width="151" height="96" alt="фото AEG">
+                    </a>
+                </li>
+                <li class="catalog-item-perfomances"><!-- флекс элемент-->
+                    <a href="">
+                        <img src="img/metabo.jpg" width="204" height="69" alt="фото Metabo">
+                    </a>
+                </li>
+            </ul>
+       </section>
+      </div> 
+    
+      
+      <section class="delivery-services-section">
+        <div class="container">   
+          <section class="about-cervices">
+            <h2 class="services">Сервисы</h2>
+            <p class="text-about-services">Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+         </section>
+        
+         <section class="wrap_for-delivery-one"><!--флекс контейнер-->
+           
+              <ul class="menu"><!-- флекс элемент-->
+                    <li><a class="active-link"  href="">Доставка</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Кредит</a></li>
+                
+              </ul>
+              
+          
+            
+           <div class="for-delivery-image-one">
+               <img src="img/new-delivery.png" width="468" height="261" alt="грузовик">
+           </div>
+           <div class="about-delivery"><!-- флекс элемент-->
+                <h2 class="services title-services">Доставка</h2>
+                <div>Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж! 
+                    
+                </div>
+           </div>
+            
+         </section>
+         <section class="wrap_for-delivery-two">
+           
+            <ul class="menu"><!-- флекс элемент-->
+                    <li><a href="">Доставка</a></li>
+                    <li><a class="active-link" href="">Гарантия</a></li>
+                    <li><a href="">Кредит</a></li>
+            </ul>
+          
+             <div class="for-delivery-image-two">
+               <img src="img/guarantee-new.png" width="389" height="283" alt="медаль">
+            </div>
+             
+            <div class="about-guarantee"><!-- флекс элемент-->
+                <h2 class="services title-services">Гарантия</h2>
+                <div>Если купленный у нас товар поломается или заискрит,<br> 
+                а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
+                  
+                   </div>
+            </div>
+            
+            
+           
+         </section> 
+         <section class="wrap_for-delivery-three">
+           
+            <ul class="menu"><!-- флекс элемент-->
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a class="active-link" href="">Кредит</a></li>
+            </ul>
+             
+            <div class="for-delivery-image-three"><!--картинка -->
+               <img src="img/credit.png" width="465" height="285" alt="кредит">
+            </div>
+           
+            <div class="about-credit"><!-- флекс элемент-->
+                <h2 class="services title-services">Кредит</h2>
+                <div class="text-credit">
+                    Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь. 
+                    
+                    
+                    </div>
+                <a class="button button-send-email" href="">Отправить заявку </a><!-- кнпока Отправить заявку-->
+            </div>
+            
+             
+            
+       </section>
+       </div> 
+     </section><!-- delivery-services-section-->
+      
+      
+
+      <div class="container"><!-- объединяем два раздела Компания техномарт и Контакты-->
+          <div class="index-columns"><!-- центровшик и флекс контейнер--> 
+            <section class="company"><!-- флекс элемент котрый сам является флекс конейнером-->
+                <h2 class="services title-technomart">Компания "Техномарт"</h2>
+                <p class="text text-about-shopping">
+                      Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и
+                      строительство не оставит равнодушным любителей сэкономить на гастрабайтерах.
+                </p>
+                <p class="text text-about-remote-points">
+                      Мы можем доставить ваш товар в самые отдаленные точки России!
+                      Техномарт рабоет со многими транспорными компаниями:
+                </p>
+                <p class="items-companies">
+                    <span><strong class="defis">&#x2015;</strong>Деловые линии<br></span>
+                    <span><strong class="defis">&#x2015;</strong>Автотрейдинг<br></span>
+                    <span><strong class="defis">&#x2015;</strong>ЖелДорЭкспедиция</span>
+                </p>
+                <a class="button more-details-button" href="">Подробнее о компании</a><!-- ссылка в виде кнопок-->
+          </section>
+
+          <section class="contacts"><!-- флекс элемент котрый сам является флекс конейнером-->
+               <h2 class="services title-technomart">Контакты</h2>
+               <p class="text text-about-self-delivery">
+                   Вы можете забрать товар сами
+                   заехав в наш офис:
+               </p>
+               <a class="map contacts-button-map" href="img/map.jpg"><!-- при нажатии на превью, откроется большая крата -->
+                    <img src="img/map_preview.jpg" width="300" height="160" alt="карта">
+               </a>
+               <a class="button write-us-button" href="">Заблудились? Напишите нам!</a><!-- ссылка в виде кнопки-->
+         </section>
+      </div>
+      </div>      
+    </main>
+      
+    <footer><!-- ПОДВАЛ-->
+       <div class="for_footer_part_one"><!--первая часть подвала -->
+             <div class="container"><!--блок центровщик и флекс контейнер -->
+                 <div class="wrap-for-footer_first_menu"><!-- флекс элемент, котрый сам является флекс конетйнером-->
+                     <a class="main-header-logo logo-for-footer" href="index.html"><!--контейнер для логотипа -->
+                            <img src="img/invalid-name.svg" width="109" height="19" alt="Логотип Техномарт">
+                     </a>
+                     <ul class="footer_first_menu"><!-- меню, флекс-элемент, котрый сам флекс- контейнер-->
+                           <li><a href="">Компания</a></li>
+                           <li><a href="">Новости</a></li>
+                           <li><a href="catalog.html">Каталог</a></li>
+                           <li><a href="">Доставка</a></li>
+                           <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                 <section><!-- флекс элемент, котрый сам является флекс конетйнером-->
+                    <p class="about-address-footer"><!--флекс-элемент-->
+                        г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55
+                    </p>
+                    <ul class="footer_second_menu"><!-- меню, флекс-элемент-->
+                        <li><a href="">Материалы</a></li>
+                        <li><a href="">Инструменты</a></li>
+                        <li><a href="">Техника</a></li>
+                        <li><a href="">Спецпредложения</a></li>
+                    </ul>
+                </section>
+              </div> <!-- блок-центровщик-->
+       </div><!--первая часть подвала -->
+
+       <div class="for_footer_part_two"><!--вторая часть подвала -->
+                  <div class="container"><!-- центровщк и флекс контейнер-->
+                      <p>
+                        @ 2010-2019 Компания "Техномарт"<br>
+                        Все права защищены
+                      </p>
+                      <ul class="list_socials"> 
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Вконтакте</span> 
+                              <img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"  >     
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Фейсбук</span> 
+                              <img src="img/icon-fb.svg" width="12" height="22" alt="фейсбук">
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Инстаграм</span> 
+                              <img src="img/icon-insta.svg" width="21" height="21" alt="инстаграм"> 
+                              </a>
+                          </li>
+                      </ul>
+                      <p>
+                          Обратная связь:<br>
+                          <span class="feedback">mail@htmlacademy.ru</span>
+                      </p>
+                      <p>
+                        Разработано-<br>
+                        <a class="for_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                      </p>
+                    
+                 </div><!-- блок-центровщик-->
+       </div><!--вторая часть подвала -->
+    </footer>
+        
+    <section class="modal modal-login"><!-- Модальное окно отправки данных-->
+          <h2 class="visually-hidden">окно отправки данных</h2><!--потом уберем этот заголовок -->
+          <form  class="login-form" action="https://echo.htmlacademy.ru" method="post">
+             <div class="for-name-and-emal-fields">
+                 <p class="wrap-for-label-with-field">
+                     <label for="user-name">Ваше имя: </label>
+                     <input  id="user-name"  type="text" name="login"  value="" placeholder="Имя Фамилия">
+                 </p>
+                 <p class="wrap-for-label-with-field">
+                     <label for="user-mail">Ваш e-mail: </label>
+                     <input  id="user-mail"  type="text" name="mail" value="" placeholder="email@example.com">
+                 </p>
+             </div>
+             <p>
+                 <label  class="for-textarea-label" for="user-text">Текст письма: </label>
+                 <textarea id="user-text" placeholder="В свободной форме"  name="area-text"></textarea>
+             </p>
+            <div class="wrap-for-button">
+                <button type="submit"> <!-- кнопка отправки данных формы-->
+                 Отправить
+                </button>
+            </div>
+         </form>
+         <button class="modal-close" type="button"><!-- верхняя кнпока Крестик, чобы закрыть модальное окно-->
+             <span class="visually-hidden">Закрыть</span>
+         </button>
+    </section>
+      
+      
+    <section class="modal modal-map"><!-- навиационная карта-->
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          
+          <p><img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+          <button class="modal-close-for-map" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+    </section>
+    
+    <script>
+         var link = document.querySelector(".write-us-button");/*кнопка "Заблудились? Напишите Нам!"*/
+        
+         var popup = document.querySelector(".modal-login");/*окно модальное*/
+         var close = popup.querySelector(".modal-close");  /*кнопку закрытия(крестик) модального окна */
+        
+         var form = popup.querySelector("form");/*форма наша*/
+        
+         
+         var login = popup.querySelector("[name=login]");/*поле "Имя Фамилия"*/
+        
+         var email = popup.querySelector("[name=mail]");/*поле "mail"*/
+         var text = popup.querySelector("[name=area-text]");/*textarea*/
+        
+         
+        
+         var isStorageSupport = true;
+         var storage = "";
+        
+        
+  
+         try {
+            storage = localStorage.getItem("login");
+         } 
+         catch (err) {
+             isStorageSupport = false;
+         }
+        
+        
+        
+         
+        link.addEventListener("click", function (evt) {/*обработчки события клика по  кнопке link(.write-us-button).*/
+                evt.preventDefault();/*Отменим стандартное действие ссылки при нажатии на неё.*/
+                popup.classList.add("modal-show");/*добавляем этот класс к модальному окну по клику на кнопку .write-us-button*/
+                
+                if (storage) {/*Если значение существует, записываем логин в соответствующее поле ввода при открытии модального окна.*/
+                    login.value = storage;
+                    email.focus(); /*уcтанавливаем фокус в поле email*/
+                }
+                else{
+                    login.focus(); /*устанавливаем фокус в поле Имя Фамилия*/
+                }
+                    
+         });
+        
+        
+         close.addEventListener("click", function (evt) {/*обработчик клика по кнопке закрытия Крестик у  модального окна.*/
+               evt.preventDefault();
+               popup.classList.remove("modal-show");/*удаляем класс, который отвечает за показ модального окна.*/
+               popup.classList.remove("modal-error");/*Уберём этот класс при закрытии формы.*/
+               
+         });
+        
+        
+        form.addEventListener("submit", function (evt) {/*обработчик события отправки формы*/
+              if (!login.value || !email.value || !text.value) {/*если что-то незапполнено*/
+                    evt.preventDefault();
+                    popup.classList.add("modal-error");/*Если в формуне ввели не валидна, добавим модальному окну класс ошибки.*/
+              }
+              else {
+                    if (isStorageSupport) { /*если  true то*/ 
+                        localStorage.setItem("login", login.value);/* в случае правильно заполненной формы запишем логин пользователя в локальное хранилище.*/
+                    }
+                }
+        });
+        
+        
+        window.addEventListener("keydown", function (evt) {/*обработчик события, который будет отлавливать нажатие кнопки ESC и в случае, если модальное окно открыто, закрывать его.*/
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                    popup.classList.remove("modal-error");/*при нажатии на ESC тоже убираем этот класс.*/
+                }
+            }
+        });
+        
+        
+        /*для модального окна Добавить в корзину*/
+        var buyButton = document.querySelector(".buy");/*Кнопка Купить*/
+        var addTrash = document.querySelector(".modal-trash"); /*мод окно Добавитьв корзину*/
+        
+        
+        buyButton.addEventListener("click", function (evt) { /*нжав на кнопку Купить окно добалвения откроется*/
+            evt.preventDefault();
+                addTrash.classList.add("modal-show");
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        /*для карты*/
+        var mapLink = document.querySelector(".contacts-button-map"); /*для карты, нажав на карту откроется карта сама*/
+        var mapPopup = document.querySelector(".modal-map"); /*окно с картой*/
+        var mapClose = mapPopup.querySelector(".modal-close-for-map"); /*кнопка закрытия Крестик*/
+        
+        
+        mapLink.addEventListener("click", function (evt) { /*нжав на карту она отобразится*/
+            evt.preventDefault();
+            mapPopup.classList.add("modal-show");
+        });
+            
+        
+        mapClose.addEventListener("click", function (evt) {/*нажав на Крестик, карта закроется*/
+            evt.preventDefault();
+            mapPopup.classList.remove("modal-show");/*удаляем класс, который отвечает за показ модального окна.*/
+        });
+            
+        
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (mapPopup.classList.contains("modal-show")) {
+                    mapPopup.classList.remove("modal-show");
+                    }
+            }
+        });
+        
+        
+      </script>    
+
+    </body>
+</html>

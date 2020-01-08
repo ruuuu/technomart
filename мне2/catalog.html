@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Проект Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet"><!--для кроссбраузерности -->
+    <link href="css/style.css" rel="stylesheet"><!-- наш файл-->
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+    
+  <body>
+    <header>
+
+      <div class="first_head"><!-- первая часть шапки-->
+        <div class="container"><!-- центровшик и флекс контейнер-->
+          <section class="section_one"><!-- входит Лого и поиск, флекс элемент корый сам является флекс контенйером-->
+              <a class="main-header-logo" href="index.html"><!---флекс элемент -->
+                  <img src="img/invalid-name.svg" width="109" height="19" alt="Логотип Техномарт">
+              </a>
+              <div class="wrap-for-seacrh">
+                <input name="s"  type="text" class="search" value="Поиск">
+                <a></a>
+              </div>
+          </section>
+            
+          <section class="section_two"><!-- входят Закладки  Корзина, Офрмить заказ,  флекс сэлемент, сам является флекс контейнером-->
+              <ul class="user-navigation-in-main-header">
+                  <li> 
+                      <a class="bookmark-icon" href="">Закладки: 0</a>
+                 </li>
+              </ul> 
+              <ul class="user-navigation-in-main-header">
+                   <li>
+                       <a class="trash trash-fill" href="">Корзина: 0</a>
+                  </li>
+              </ul>
+              <ul class="user-navigation-in-main-header">
+                  <li>
+                    <a class="make-order-button" href=""><!--флекс элемент--> 
+                      Оформить заказ </a>
+                 </li>
+              </ul>
+              
+          </section>
+        </div><!--центровщик -->
+      </div><!-- первая часть шапки-->
+
+      <div class="second_head"><!--вторая часть шапки , блок с голубым фоном-->
+        <div class="container"><!-- центровшик и флекс контейнер-->
+          <div class="content_of_second_head"> <!-- флекс элемент, котрый сам является флекс контейнром-->
+             <section><!-- флекс элемент-->
+                <p class="info_about_shop">
+                  Интернет-магазин<br>
+                  строительных материалов<br>
+                  и инструментов для ремонта
+                </p>
+             </section>
+
+             <section><!-- флекс элемент-->
+                <a href="tel:+78125550555" class="phone"> 
+                   +7 (812) 555-05-55
+                </a>
+                <div class="addresss">
+                  г.Санкт-Петербург, ул. Б. Конешенная, д. 19/8
+                </div>
+             </section>
+
+             <section class="wrap-for-name-block"><!-- флекс элемент-->
+               <div class="wrap-for-logout-button">
+                 <a class="for-user-icon" href=""></a>
+                 <a class="name" href="">Равшан Джамшутович</a><!-- ссылка на профиль-->
+                 <a class="for-logout-icon" href="index.html"></a><!-- кнопка Выхода -->
+               </div>
+               <div class="wrap-for-small-link">
+                    <a class="small_link small_link_first" href="">Мои заказы</a> <!--ссылка в   виде кнопки -->
+                    <a class="small_link small_link_second" href="">Личный кабинет</a><!--ссылка в виде кнопки -->
+               </div>
+            </section>
+          </div>
+        </div><!--container -->
+          <!-- гланвое меню флекс элемент, котрый сам является флекс контенером-->
+        <div class="main-navigation-wrapper">  
+           <div class="container">
+             <ul class="site-navigation"><!-- меню-->
+                  <li><a class="first-element" href="index.html">Главная</a></li>
+                  <li><a href="">Компания</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Спецпредложения</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a class="last-element" href="">Контакты</a></li> 
+             </ul>
+           </div><!--container-->
+         </div> 
+      </div><!--вторая часть шапки-->
+
+  </header>
+
+  <main class="inner-page">
+    <div class="container"> <!-- центровщик-->
+
+        <ul class="breadcrumbs"><!-- меню флекс контейнр, хлебные крошки-->
+             <li class="before-catalog"><a href="index.html"></a></li><!-- иконка домика-->
+             <li><a href="catalog.html">Каталог</a></li>
+             <li><a href="">Инструменты</a></li>
+             <li class="breadcrumbs-current"><a href="">Перфораторы</a></li>
+       </ul>
+        
+       <section class="popular-tovar change-fon"> 
+        <h2 class="page-title">Перфораторы Перфораторы Перфораторы Перфораторы Перфораторы Перфораторы </h2>
+       </section>   
+        
+       <section class="block-for-filter-sortirovka container"> <!-- флекс контейнер-->
+          <div class="filtes-small-block"><!--флекс элемент -->
+               Фильтр:
+          </div>
+          <div class="wrap-for-filter-big-block"><!-- флекс элемент, ктрый сам флекс контейнер-->
+            <div class="sort-item">Сортировка:</div><!-- флекс элемент-->
+            <ul class="sortirovka-block"><!--флекс элемент, котрый сам вялется флекс контейнером-->
+                  <li>По цене</li>
+                  <li>По типу</li>
+                  <li>По функционалу</li>
+                  <li></li><!-- стрелка вниз-->
+                  <li></li><!-- стрелка вверх-->
+            </ul>
+          </div>
+      </section>
+        
+       <div class="catalog-columns"> <!--940 px флекс контейнр , Чтобы расположить раздел с фильтрами и раздел с каталогом рядом друг с другом-->
+
+          
+            <section class="filters"><!-- флекс элемент-->
+             <h2 class="visually-hidden">Фильтр товаров</h2><!--этот заголовок потом уберем -->
+             <form  class="filter" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="filter-item"><!--блок для ползунка-->
+                    <legend>Цена:</legend>     
+                    <div class="range-filter"> <!--родитель для круглешков -->
+                        <div class="range-controls"><!--  блок для ползунка -->
+                            <div class="scale"><!-- указывает полную ширину прогресс бара-->
+                                <div class="bar"></div><!-- указывает выбранный диапазон-->
+                            </div>  
+                            <div class="toggle toggle-min"></div><!-- круглешок мин-->
+                            <div class="toggle toggle-max"></div><!-- круглешок мах-->
+                        </div>
+                        <div class="price-controls"><!--для полей ввода цены -->
+                            <input name="min-price" type="text" value="0">
+                            <label class="max-price"> &#8212;</label>    
+                            <input name="max-price" type="text" value="15000">
+                        </div>
+                        <div class="grey-border"></div>
+                    </div>
+                </fieldset>
+                <fieldset><!-- группа полей-->
+                   <legend>Производители:</legend>
+                   <ul>
+                       <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox" id="filter-for-Bosch" type="checkbox" name="Bosch" checked><!--связываем label и input -->
+                           <label for="filter-for-Bosch">Bosch</label>
+                       </li>
+                       <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox"  id="filter-for-Интерскол" type="checkbox" name="Интерскол" disabled><!--связываем label и input -->
+                           <label for="filter-for-Интерскол">Интерскол</label>
+                       </li>
+                       <li class="filter-option">
+                          <input class="visually-hidden filter-input filter-input-checkbox"  id="filter-for-Makita" type="checkbox" name="Makita" checked><!--связываем label и input -->
+                          <label for="filter-for-Makita">Makita</label>
+                       </li>
+                       <li class="filter-option">
+                          <input class="visually-hidden filter-input filter-input-checkbox"  id="filter-for-Dewalt" type="checkbox" name="Dewalt" ><!--связываем label и input -->
+                          <label for="filter-for-Dewalt">Dewalt</label>
+                       </li>
+                       <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox"  id="filter-for-Hitachi" type="checkbox" name="Hitachi" ><!--связываем label и input -->
+                          <label for="filter-for-Hitachi">Hitachi</label>
+                       </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filters"><!-- группа полей-->
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input  class="visually-hidden filter-input filter-input-radio" id="filter-pitanie1" type="radio" name="product-group" checked><!--у группы радиокнопок  атрибут name должен бытьу всех один и тот же -->
+                            <label for="filter-pitanie1">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-option">
+                            <input  class="visually-hidden filter-input filter-input-radio" id="filter-pitanie2" type="radio" name="product-group">
+                            <label for="filter-pitanie2">Сетевые</label>
+                        </li>
+                    </ul>
+                  </fieldset>
+                <button  class="button button_show" type="submit">
+                    Показать
+                </button>
+             </form>
+          </section> <!-- фильтры флекс элемент-->
+          <h2 class="visually-hidden">Список инструментов</h2><!--этот заголовок потом уберем -->
+          
+          <ul class="catalog-list"><!--флекс элемент, котрый сам флекс контейнер -->
+                     <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                   
+                   
+                   
+                      <li class="catalog-item"><!-- карточка товара-->
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount"></div>
+                        <div class="price">90 500 Р.</div>
+                     </li>
+                   
+                   
+                   
+                     <li class="catalog-item">
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount"></div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                   
+                   
+                   
+                      <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                      </li>
+                   
+                   
+                   
+                      <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                    
+                       
+                   
+                      <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                     
+                     
+                   
+                     <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                   
+                   
+                   
+                     <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                   
+                   
+                   
+                      <li class="catalog-item"><!-- карточка товара-->
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                          <a href="#" class="buy">Купить</a>
+                          <a href="#" class="bookmark">В закладки</a>
+                        </div>
+                        <div class="image">
+                            <img width="218" height="170" src="img/item.jpg" alt="товар">
+                        </div>    
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22 500 Р.</div>
+                        <div class="price">15 500 Р.</div>
+                     </li>
+                   
+                 
+              
+                   <ul class="pagination-list"><!-- ПАГИНАЦИЯ -->
+                       <li class="pagination-item pagination-item-current">
+                           <a>1</a> <!--эта страница текущая -->
+                       </li>
+                       <li class="pagination-item">
+                           <a href="#">2</a>
+                       </li>
+                       <li class="pagination-item">
+                           <a href="#">3</a>
+                       </li>
+                       <li class="pagination-item">
+                           <a class="next" href="#">Следующая</a>
+                       </li>
+            </ul>
+            </ul>
+       </div><!---->
+    </div><!-- -->
+        
+      
+        <section class="about-perforators">
+            <div class="container">
+                <h1 class="page-title">Пара слов о перфораторах </h1>
+                <div class="text-about-perforators">
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                    
+                </div>
+            </div>
+        </section>
+    
+  </main>
+
+
+  <footer><!-- ПОДВАЛ-->
+       <div class="for_footer_part_one"><!--первая часть подвала -->
+             <div class="container"><!--блок центровщик и флекс контейнер -->
+                 <div class="wrap-for-footer_first_menu"><!-- флекс элемент, котрый сам является флекс конетйнером-->
+                     <a class="main-header-logo logo-for-footer" href="index.html"><!--контейнер для логотипа -->
+                            <img src="img/invalid-name.svg" width="109" height="19" alt="Логотип Техномарт">
+                     </a>
+                     <ul class="footer_first_menu"><!-- меню, флекс-элемент, котрый сам флекс- контейнер-->
+                           <li><a href="">Компания</a></li>
+                           <li><a href="">Новости</a></li>
+                           <li><a href="catalog.html">Каталог</a></li>
+                           <li><a href="">Доставка</a></li>
+                           <li><a href="">Контакты</a></li>
+                         
+                         
+                    </ul>
+                </div>
+                
+                <section><!-- флекс элемент, котрый сам является флекс конетйнером-->
+                    <p class="about-address-footer"><!--флекс-элемент-->
+                        г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55
+                        
+                    </p>
+                    <ul class="footer_second_menu"><!-- меню, флекс-элемент-->
+                        <li><a href="">Материалы</a></li>
+                        <li><a href="">Инструменты</a></li>
+                        <li><a href="">Техника</a></li>
+                        <li><a href="">Спецпредложения</a></li>
+                        
+                    </ul>
+                </section>
+              </div> <!-- блок-центровщик-->
+            </div><!--первая часть подвала -->
+
+            <div class="for_footer_part_two"><!--вторая часть подвала -->
+                  <div class="container"><!-- центровщк и флекс контейнер-->
+                      <p>
+                        @ 2010-2019 Компания "Техномарт"<br>
+                        Все права защищены
+                      </p>
+                      <ul class="list_socials"> 
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Вконтакте</span> 
+                              <img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте">      
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Фейсбук</span> 
+                              <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-button" href=""> 
+                              <span class="visually-hidden">Инстаграм</span> 
+                              <img src="img/icon-insta.svg" width="21" height="21" alt="Вконтакте"> 
+                              </a>
+                          </li>
+                      </ul>
+                      <p>
+                          Обратная связь:<br>
+                          <span class="feedback">mail@htmlacademy.ru</span>
+                      </p>
+                      <p>
+                        Разработано -<br>
+                        <a class="for_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                      </p>
+                    
+                 </div><!-- блок-центровщик-->
+            </div><!--вторая часть подвала -->
+        </footer>
+
+
+
+  <section class="modal-trash modal-login-add-trash"><!--попап "Добавить в корзину" -->
+        <h2 class="visually-hidden">попап "Добавить в корзину" </h2><!--уберем потом этот элемент -->
+        
+        <h3>Товар добавлен в корзину!</h3>
+        <div class="fon-wrapper">
+          <div class="for-buttons-in-trash"><!-- флекс контейнер-->
+            <a href="">Оформить заказ</a><!--кнопка в виде ссылки -->
+            <a href="">Продолжить покупки</a><!--кнопка в виде ссылки -->
+          </div>
+        </div>
+       <button class="modal-close" type="button"><!-- верхняя кнпока Крестик, чобы закрыть модальное окно-->
+             <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    
+    
+
+  </body>
+</html>
